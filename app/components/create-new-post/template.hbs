@@ -1,0 +1,12 @@
+<h3>Create New</h3>
+
+<form id="NewPost">
+  <p>
+    {{input value=newPost.title placeholder="Here goes title.."}}
+    {{input value=newPost.author placeholder="by ..."}}
+  </p>
+  <p>
+    {{textarea value=newPost.text placeholder="... here goes your post ..." rows="10" cols="140"}}
+  </p>
+  <p><button {{action "createPost"}}>Save</button></p>
+</form>
