@@ -3,7 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     createPost: function() {
-      console.log('createPost action');
+      var newPost = this.get('newPost');
+      console.log(newPost.author);
+      console.log(newPost.text);
     }
   }
 });
