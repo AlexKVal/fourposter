@@ -9,7 +9,7 @@
   <div class="panel-footer">
     <p>
     <i>Posted on <span class="text-success">{{post.createdDate}}</span> by <b class="text-primary">{{post.author}}</b></i>
-    <button type="button" class="btn btn-warning btn-sm pull-right">Delete</button>
+    <button type="button" class="btn btn-warning btn-sm pull-right" {{action "deletePost" post}}>Delete</button>
     </p>
   </div>
 </div>
