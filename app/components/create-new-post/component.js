@@ -10,6 +10,9 @@ export default Ember.Component.extend({
       this.set('newPost.title', null);
       this.set('newPost.author', null);
       this.set('newPost.text', null);
+    },
+    scrollToTop: function() {
+      $(document.body).animate({scrollTop: 0}, 800);
     }
   }
 });

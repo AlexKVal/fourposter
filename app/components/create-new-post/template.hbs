@@ -8,5 +8,8 @@
   <p>
     {{textarea value=newPost.text placeholder="... here goes your post ..." rows="10" cols="80"}}
   </p>
-  <p><button class="btn btn-primary btn-lg" {{action "createPost" newPost}}>Save</button></p>
+  <p>
+    <button class="btn btn-primary btn-lg" {{action "createPost" newPost}}>Save</button>
+    <button class="btn btn-info btn-lg" {{action "scrollToTop"}}>To top</button>
+  </p>
 </form>
