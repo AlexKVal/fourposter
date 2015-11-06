@@ -21,5 +21,17 @@
     <script src="assets/fourposter.js"></script>
 
     {{content-for 'body-footer'}}
+
+    <script type="text/javascript">
+      $(document).on('visibilitychange', function(e) {
+        if (e.target.visibilityState === 'visible') {
+          console.log('visible');
+        } else if (e.target.visibilityState === 'hidden') {
+          console.log('hidden');
+        }
+
+        document.title = e.target.visibilityState;
+      });
+    </script>
   </body>
 </html>
